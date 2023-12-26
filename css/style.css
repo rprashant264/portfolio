@@ -121,6 +121,55 @@
 
 .stop-scroll {
   overflow: hidden; }
+  .slide-in-right {
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideInRight 1.5s forwards;
+  }
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .slide-in-left {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideInLeft 1s forwards;
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .pop-up {
+    opacity: 0;
+    transform: scale(0.5);
+    animation: popUp 1s forwards;
+  }
+  
+  @keyframes popUp {
+    from {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1.35);
+    }
+  }
+  
 
 /* Navigation burger end */
 .fh5co-top-banner {

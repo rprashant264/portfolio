@@ -1,9 +1,4 @@
-/*
- * Author by FreeHTML5.co
- * Twitter: https://twitter.com/fh5co
- * Facebook: https://fb.com/fh5co
- * URL: https://freehtml5.co
- */
+
 /* Fonts */
 @font-face {
   font-family: 'Calisto-MT';
@@ -23,6 +18,10 @@
   margin: 0;
   padding: 0;
   font-family: "Calisto-MT"; }
+  body {
+    overflow-x: hidden;
+  }
+  
 
 .site-container {
   width: 1115px;
@@ -53,7 +52,8 @@
   position: absolute;
   top: 2.8%;
   width: 100%;
-  z-index: 2; }
+  z-index: 2;
+ }
 
 .site-navigation-inner {
   display: flex;
@@ -78,7 +78,9 @@
     padding: 3%;
     border: 2px solid #fff;
     border-radius: 7px;
-    background-color: #4c4b4a; }
+    
+    background-color: #333;
+    color: #fff; }
     .main-navigation .main-navigation__ul li {
       margin-bottom: 20px;
       list-style: none; }
@@ -90,7 +92,7 @@
       text-transform: uppercase;
       transition: 0.3s ease; }
       .main-navigation .main-navigation__ul a:hover {
-        color: #777; }
+        color: #baadad; }
   @media (max-width: 1150px) {
     .main-navigation {
       opacity: 0.94; } }
@@ -167,6 +169,22 @@
     to {
       opacity: 1;
       transform: scale(1.35);
+    }
+  }
+  .pop-up-books {
+    opacity: 0;
+    transform: scale(0.5);
+    animation: popUp 1s forwards;
+  }
+  
+  @keyframes popUp {
+    from {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1.1);
     }
   }
   
@@ -447,7 +465,8 @@ background-repeat: no-repeat; }
     margin-bottom: 50px;
     padding-bottom: 20px; }
   .fh5co-books .books-brand-button {
-    text-align: center; }
+    text-align: center;
+  margin-bottom: 10px; }
     .fh5co-books .books-brand-button .brand-button {
       font-size: 16px;
       text-transform: none;
@@ -459,7 +478,9 @@ background-repeat: no-repeat; }
       margin-bottom: 60px; } }
 
 .books {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 70px; }
@@ -506,6 +527,9 @@ background-repeat: no-repeat; }
       margin-right: 10px; }
       .single-book:last-child {
         margin-right: 0; } }
+        .single-book.hidden {
+          display: none;
+      }
 
 .rating {
   margin-top: 8px;
@@ -522,6 +546,7 @@ background-repeat: no-repeat; }
 .fh5co-counter {
   position: relative;
   margin-bottom: 122px;
+  margin-top: 10px;
   padding: 100px 0;
   background-image: url("../images/book-bckg.jpg");
   background-size: cover;
@@ -552,6 +577,10 @@ background-repeat: no-repeat; }
   width: 23%;
   text-align: center;
   color: #fff; }
+  .single-count:hover{
+    transform: scale(1.2); /* Adjust the scale factor as needed */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+  }
   .single-count span {
     display: block;
     margin-bottom: 25px;
@@ -817,6 +846,10 @@ background-repeat: no-repeat; }
 .footer-info {
   width: 50%;
   display: flex; }
+  .footer-info-img{
+    height: 150px;
+    width: 150px;
+  }
   .footer-info .footer-info__left {
     margin-right: 45px; }
     .footer-info .footer-info__left img {
@@ -843,7 +876,11 @@ background-repeat: no-repeat; }
   @media (max-width: 620px) {
     .footer-info {
       flex-direction: column;
-      align-items: center; } }
+      align-items: center; }
+    .social-icons a{
+      display: flex;
+      margin-top: 10px;
+    } }
 
 .footer-contact-form {
   width: 50%; }

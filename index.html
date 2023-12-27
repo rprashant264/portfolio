@@ -7,6 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 	<title>Prof. Durgesh Pant</title>
 </head>
 <body>
@@ -43,7 +45,7 @@
 	<section class="fh5co-top-banner">
 		<div class="top-banner__inner site-container">
 			<div class="top-banner__image slide-in-left">
-				<img src="./images/dg-sir-11_0.jpg" alt="author image">
+				<img src="./images/dg.jpg" alt="author image">
 			</div>
 			<div class="top-banner__text">
 				<div class="top-banner__text-up">
@@ -56,7 +58,7 @@
 						Technology (UCOST)</span>
 				</div>
 				<p>A lifelong learner and explorer</p>
-				<a href="#" class="brand-button">Read bio > </a>
+				<a href="#about-me-inner" class="brand-button">Read bio > </a>
 			</div>
 		</div>
 	</section>
@@ -64,10 +66,10 @@
 
 	<!-- About me -->
 	<section class="fh5co-about-me">
-		<div class="about-me-inner site-container">
+		<div class="about-me-inner site-container" id="about-me-inner">
 			<article class="portfolio-wrapper">
-				<div class="portfolio__img">
-					<img src="./images/dg-sir-11_0.jpg" class="about-me__profile" alt="about me profile picture">
+				<div class="portfolio__img slide-in-left">
+					<img src="./images/dgSir2.jpg" class="about-me__profile" alt="about me profile picture">
 				</div>
 				<div class="portfolio__bottom">
 					<div class="portfolio__name">
@@ -113,7 +115,7 @@
 	<section class="fh5co-books">
 		<div class="site-container">
 			<h2 class="universal-h2 universal-h2-bckg"> Books And Reseach Works</h2>
-			<div class="books">
+			<div class="books slide-in-right">
 				<div class="single-book">
 					<a href="#" class="single-book__img">
 						<img src="./images/books-1.jpg" alt="single book and cd">
@@ -121,7 +123,7 @@
 							<img src="./images/download.svg" alt="book image">
 						</div>
 					</a>
-					<h4 class="single-book__title">Olivani</h4>
+					<h4 class="single-book__title">Technology Enabled Learning</h4>
 					<span class="single-book__price">$15.00</span>
 					<!-- star rating -->
 					<div class="rating">
@@ -140,7 +142,7 @@
 							<img src="./images/download.svg" alt="book image">
 						</div>
 					</a>
-					<h4 class="single-book__title">Molleon’s Life</h4>
+					<h4 class="single-book__title">Internet of Things</h4>
 					<span class="single-book__price">$22.00</span>
 					<!-- star rating -->
 					<div class="rating">
@@ -159,28 +161,52 @@
 							<img src="./images/download.svg" alt="book image">
 						</div>
 					</a>
-					<h4 class="single-book__title">Love is Love</h4>
+					<h4 class="single-book__title">उत्तराखंड की लोक परंपरा में सन्निहित विज्ञान</h4>
 					<span class="single-book__price">$25.00</span>
 				</div>
-				<div class="single-book">
+
+				<div class="single-book hidden pop-up">
+					<a href="#" class="single-book__img">
+						<img src="./images/books-5.jpg" alt="single book and cd">
+						<div class="single-book_download">
+							<img src="./images/download.svg" alt="book image">
+						</div>
+					</a>
+					<h4 class="single-book__title">पर्वतीय जलस्त्रोत:संरक्षण एवं पुनर्जीवन</h4>
+					<span class="single-book__price">$30.00</span>
+				</div>
+				<div class="single-book hidden pop-up">
+					<a href="#" class="single-book__img">
+						<img src="./images/books-6.jpg" alt="single book and cd">
+						<div class="single-book_download">
+							<img src="./images/download.svg" alt="book image">
+						</div>
+					</a>
+					<h4 class="single-book__title">Water Resources</h4>
+					<span>Management and Technologies</span><br>
+					<span class="single-book__price">$30.00</span>
+				</div>
+				<div class="single-book hidden pop-up">
 					<a href="#" class="single-book__img">
 						<img src="./images/books-4.jpg" alt="single book and cd">
 						<div class="single-book_download">
 							<img src="./images/download.svg" alt="book image">
 						</div>
 					</a>
-					<h4 class="single-book__title">Give Me Also</h4>
+					<h4 class="single-book__title">जल संरक्षण, जल गुणवत्ता एवं स्वास्थ्य, स्वच्छता विषय पर शिक्षण हेतु प्रशिक्षण मैनुअल</h4>
 					<span class="single-book__price">$30.00</span>
 				</div>
+				<div class="books-brand-button">
+					<button id="viewToggle" class="brand-button">View more</button>
+				</div>
 			</div>
-			<div class="books-brand-button">
-				<a href="#" class="brand-button">View more</a>
-			</div>
+
 		</div>
 	</section>
 	<!-- Books and CD end -->
 
 	<!-- Counter -->
+	<h2 class="universal-h2 universal-h2-bckg"> Achievement</h2>
 	<div class="fh5co-counter counters">
 		<div class="counter-inner site-container">
 			<div class="single-count">
@@ -194,16 +220,10 @@
 				<span class="count" data-count="600">0</span>
 				<div class="single-count__text">
 					<img src="./images/counter-2.png" alt="counter icon">
-					<p>Pages</p>
+					<p>Research Papers</p>
 				</div>
 			</div>
-			<div class="single-count">
-				<span class="count" data-count="2000">0</span>
-				<div class="single-count__text">
-					<img src="./images/counter-3.png" alt="counter icon">
-					<p>Sales</p>
-				</div>
-			</div>
+
 			<div class="single-count">
 				<span class="count" data-count="125">0</span>
 				<div class="single-count__text">
@@ -215,45 +235,81 @@
 	</div>
 	<!-- Counter -->
 
-	<!-- Blog -->
-	<section class="fh5co-blog">
-		<div class="site-container">
-			<h2 class="universal-h2 universal-h2-bckg">My Blog</h2>
-			<div class="blog-slider blog-inner">
-				<div class="single-blog">
-					<div class="single-blog__img">
-						<img src="./images/blog1.jpg" alt="blog image">
+		<!-- Blog -->
+		<section class="fh5co-blog">
+			<div class="site-container">
+				<h2 class="universal-h2 universal-h2-bckg">Blogs</h2>
+				<div class="blog-slider blog-inner">
+					<div class="single-blog">
+						<div class="single-blog__img">
+							<img src="./images/blog2.jpg" alt="blog image">
+						</div>
+						<div class="single-blog__text">
+							<h4>The Journey Under the Waves</h4>
+							<span>On August 28, 2015</span>
+							<p>Quisque vel sapi nec lacus adipis cing bibendum nullam porta lites laoreet aliquam.velitest, tempus a ullamcorper et, lacinia mattis mi. Cras arcu nulla, blandit id cursus et, ultricies eu leo.</p>
+						</div>
 					</div>
-					<div class="single-blog__text">
-						<h4>The Journey Under the Waves</h4>
-						<span>On August 28, 2015</span>
-						<p>Quisque vel sapi nec lacus adipis cing bibendum nullam porta lites laoreet aliquam.velitest, tempus a ullamcorper et, lacinia mattis mi. Cras arcu nulla, blandit id cursus et, ultricies eu leo.</p>
+					<div class="single-blog">
+						<div class="single-blog__img">
+							<img src="./images/blog2.jpg" alt="blog image">
+						</div>
+						<div class="single-blog__text">
+							<h4>The Journey Under the Waves</h4>
+							<span>On August 28, 2015</span>
+							<p>Quisque vel sapi nec lacus adipis cing bibendum nullam porta lites laoreet aliquam.velitest, tempus a ullamcorper et, lacinia mattis mi. Cras arcu nulla, blandit id cursus et, ultricies eu leo.</p>
+						</div>
 					</div>
-				</div>
-				<div class="single-blog">
-					<div class="single-blog__img">
-						<img src="./images/blog2.jpg" alt="blog image">
-					</div>
-					<div class="single-blog__text">
-						<h4>The Journey Under the Waves</h4>
-						<span>On August 28, 2015</span>
-						<p>Quisque vel sapi nec lacus adipis cing bibendum nullam porta lites laoreet aliquam.velitest, tempus a ullamcorper et, lacinia mattis mi. Cras arcu nulla, blandit id cursus et, ultricies eu leo.</p>
-					</div>
-				</div>
-				<div class="single-blog">
-					<div class="single-blog__img">
-						<img src="./images/blog2.jpg" alt="blog image">
-					</div>
-					<div class="single-blog__text">
-						<h4>The Journey Under the Waves</h4>
-						<span>On August 28, 2015</span>
-						<p>Quisque vel sapi nec lacus adipis cing bibendum nullam porta lites laoreet aliquam.velitest, tempus a ullamcorper et, lacinia mattis mi. Cras arcu nulla, blandit id cursus et, ultricies eu leo.</p>
+					<div class="single-blog">
+						<div class="single-blog__img">
+							<img src="./images/blog2.jpg" alt="blog image">
+						</div>
+						<div class="single-blog__text">
+							<h4>The Journey Under the Waves</h4>
+							<span>On August 28, 2015</span>
+							<p>Quisque vel sapi nec lacus adipis cing bibendum nullam porta lites laoreet aliquam.velitest, tempus a ullamcorper et, lacinia mattis mi. Cras arcu nulla, blandit id cursus et, ultricies eu leo.</p>
+						</div>
 					</div>
 				</div>
 			</div>
+		</section>
+		<!-- Blog end -->
+<!---Recent Updates-->
+<section class="fh5co-blog">
+	<div class="site-container">
+		<h2 class="universal-h2 universal-h2-bckg">Recent Updates</h2>
+		<div class="blog-slider blog-inner">
+			<div class="single-blog">
+
+				<div class="single-blog__text">
+					<h4>State Level 31st National Children's Science Congress 2023</h4>
+					<span>On December 21, 2023</span>
+					<p>State Level 31st National Children's Science Congress 2023 is being organized at UCOST, Vigyan Dham, Jhajra, Dehradun on 22nd Dec, 2023.</p>
+				</div>
+			</div>
+			<div class="single-blog">
+
+				<div class="single-blog__text">
+					<h4>उत्तराखण्ड शासन द्वारा तैयार की गयी "मेरी योजना" नामक पुस्तक को समस्त विभागों एवं विभागों के अधीन सभी राजकीय कार्यालयों की वेबसाईट पर अपलोड करने विषयक.</h4>
+					<span>On  December 07, 2023</span>
+					<p></p>
+				</div>
+			</div>
+			<div class="single-blog">
+
+				<div class="single-blog__text">
+					<h4>Gyanotkarsh:Science & Technology Outreach Program</h4>
+					<span>On November 09, 2023</span>
+					<p>Quisque vel sapi nec lacus adipis cing bibendum nullam porta lites laoreet aliquam.velitest, tempus a ullamcorper et, lacinia mattis mi. Cras arcu nulla, blandit id cursus et, ultricies eu leo.</p>
+				</div>
+			</div>
 		</div>
-	</section>
-	<!-- Blog end -->
+	</div>
+</section>
+<!---Recent Updates-->
+
+
+
 
 	<!-- Quotes -->
 	<section class="fh5co-quotes">
@@ -282,14 +338,15 @@
 	<section class="fh5co-social">
 		<div class="site-container">
 			<div class="social">
-				<h5>Follow me!!</h5>
+				<h5>Find More On!!</h5>
 				<div class="social-icons">
-					<a href="#" target="_blank"><img src="./images/social-twitter.png" alt="social icon"></a>
-					<a href="#" target="_blank"><img src="./images/social-pinterest.png" alt="social icon"></a>
-					<a href="#" target="_blank"><img src="./images/social-youtube.png" alt="social icon"></a>
-					<a href="#" target="_blank"><img src="./images/social-twitter.png" alt="social icon"></a>
+					<a href="https://www.facebook.com/durgesh.pant.3" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+					<a href="https://twitter.com/DurgeshPant26" target="blank"><i class="fa-brands fa-x-twitter"></i></a>
+					<a href="https://www.youtube.com/@ucostdehradun974" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+					<a href="https://www.instagram.com/durgeshpant100/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+					<a href="https://www.linkedin.com/in/prof-durgesh-pant-691b801b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BiaMcEeEeTyioNdc8gwoHfA%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
 				</div>
-				<h5>Share it!</h5>
+				<h5></h5>
 			</div>
 		</div>
 	</section>
@@ -301,19 +358,13 @@
 			<div class="footer-inner">
 				<div class="footer-info">
 					<div class="footer-info__left">
-						<img src="./images/footer-img.jpg" alt="about me image">
-						
+						<img  class="footer-info__left footer-info-img" src="./images/footer-img.jpg" alt="about me image">
 					</div>
 					<div class="footer-info__right">
 						<h5>Get In Touch</h5>
-						<p class="footer-phone">Phone: +958734902847</p>
-						<p>Email : Jhone@Example.com</p>
-						<div class="social-icons">
-							<a href="#" target="_blank"><img src="./images/social-twitter.png" alt="social icon"></a>
-							<a href="#" target="_blank"><img src="./images/social-pinterest.png" alt="social icon"></a>
-							<a href="#" target="_blank"><img src="./images/social-youtube.png" alt="social icon"></a>
-							<a href="#" target="_blank"><img src="./images/social-twitter.png" alt="social icon"></a>
-						</div>
+						<p class="footer-phone">Phone: +91-1234567890</p>
+						<p>Email : XYZ@Example.com</p>
+
 					</div>
 				</div>
 				<div class="footer-contact-form">
@@ -331,7 +382,7 @@
 		</div>
 		<div class="footer-bottom">
 			<div class="site-container footer-bottom-inner">
-				<p>© 2023 Prof Durgesh Pant | Design by <a href="https://ucost.uk.gov.in/" target="_blank">UCOST</a> | All rights Reserved.</p>
+				<p>Copyright © 2023 Prof Durgesh Pant | Design by <a href="https://ucost.uk.gov.in/" target="_blank">UCOST</a> | All rights Reserved.</p>
 
 			</div>
 		</div>
@@ -342,6 +393,68 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var viewToggle = document.getElementById('viewToggle');
+    var hiddenBooks = document.querySelectorAll('.single-book.hidden');
+
+    viewToggle.addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent the default behavior (page refresh)
+
+        hiddenBooks.forEach(function (book) {
+            book.style.display = (book.style.display === 'block') ? 'none' : 'block';
+        });
+
+        // Toggle the text content of the button
+        viewToggle.textContent = (viewToggle.textContent === 'View more') ? 'View less' : 'View more';
+    });
+});
+	</script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			// Function to add the 'slide-in' class when the section is in the viewport
+			function handleIntersection(entries, observer) {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						entry.target.classList.add('pop-up-books');
+						observer.unobserve(entry.target);
+					}
+				});
+			}
+				
+			// Create an Intersection Observer
+			const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+		
+			// Target the 'fh5co-books' section
+			const booksSection = document.querySelector('.fh5co-books');
+		
+			// Start observing the 'fh5co-books' section
+			observer.observe(booksSection);
+		});
+		</script>
+			<script>
+				document.addEventListener('DOMContentLoaded', function () {
+					// Function to add the 'slide-in' class when the section is in the viewport
+					function handleIntersection(entries, observer) {
+						entries.forEach(entry => {
+							if (entry.isIntersecting) {
+								entry.target.classList.add('slide-in-left');
+								observer.unobserve(entry.target);
+							}
+						});
+					}
+						
+					// Create an Intersection Observer
+					const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+				
+					// Target the 'fh5co-books' section
+					const imageSection = document.querySelector('.about-me__profile');
+				
+					// Start observing the 'fh5co-books' section
+					observer.observe(imageSection);
+				});
+				</script>
+
 
 </body>
 </html>

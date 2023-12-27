@@ -78,7 +78,7 @@ $(window).scroll(function(e){
 
 		/* Blog slider */
 		$('.updates-slider').slick({
-			slidesToShow: 2,
+			slidesToShow: 1,
 			prevArrow: '<span class="span-arrow slick-prev"><</span>',
 			nextArrow: '<span class="span-arrow slick-next">></span>',
 			responsive: [

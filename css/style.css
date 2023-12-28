@@ -714,7 +714,7 @@ width: 90%;
 @media (max-width:767px) {
   /* Director images style */
 .director-images img {
-  width: 70%;
+  width: 70%!important;
   height: 50%; /* Ensure images maintain their aspect ratio */
   border-radius: 10px;
 }
@@ -723,7 +723,7 @@ width: 90%;
 @media (max-width:1250px) {
   /* Director images style */
 .director-images img {
-  width: 38%;
+  width: 38%!important;
   height: 50%; /* Ensure images maintain their aspect ratio */
   border-radius: 10px;
 }

@@ -711,23 +711,37 @@ width: 90%;
   background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
   filter: grayscale(0);
 }
-@media (max-width:767px) {
+/* For screens with a width up to 767 pixels (typically mobile devices) */
+@media (max-width: 789px) {
   /* Director images style */
-.director-images img {
-  width: 70%!important;
-  height: 50%; /* Ensure images maintain their aspect ratio */
-  border-radius: 10px;
+  .director-images img {
+    width: 75%;
+    max-width: 100%; /* Ensure images do not exceed their container */
+    height: auto; /* Ensure images maintain their aspect ratio */
+    border-radius: 10px;
+  }
 }
-  
-}
-@media (max-width:1250px) {
+
+/* For screens with a width between 768 and 1249 pixels */
+@media (min-width: 789px) and (max-width: 1249px) {
   /* Director images style */
-.director-images img {
-  width: 38%!important;
-  height: 50%; /* Ensure images maintain their aspect ratio */
-  border-radius: 10px;
+  .director-images img {
+    width: 33%;
+    max-width: 100%; /* Ensure images do not exceed their container */
+    height: auto; /* Ensure images maintain their aspect ratio */
+    border-radius: 10px;
+  }
 }
-  
+
+/* For screens with a width of 1250 pixels and above */
+@media (min-width: 1250px) {
+  /* Director images style */
+  .director-images img {
+    width: 24%;
+    max-width: 100%; /* Ensure images do not exceed their container */
+    height: auto; /* Ensure images maintain their aspect ratio */
+    border-radius: 10px;
+  }
 }
 /* Additional styles based on your design preferences */
 

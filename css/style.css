@@ -747,9 +747,7 @@ width: 90%;
   background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
   filter: grayscale(0);
 }
-
-/* For screens with a width up to 767 pixels (typically mobile devices) */
-@media (max-width: 789px) {
+@media (max-width:767px) {
   /* Director images style */
   .director-images img {
     width: 75%;

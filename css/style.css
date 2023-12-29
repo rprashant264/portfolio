@@ -747,15 +747,7 @@ width: 90%;
   background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
   filter: grayscale(0);
 }
-@media (max-width:767px) {
-  /* Director images style */
-  .director-images img {
-    width: 75%;
-    max-width: 100%; /* Ensure images do not exceed their container */
-    height: auto; /* Ensure images maintain their aspect ratio */
-    border-radius: 10px;
-  }
-}
+
 
 /* For screens with a width between 768 and 1249 pixels */
 @media (min-width: 789px) and (max-width: 1249px) {
